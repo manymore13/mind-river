@@ -39,6 +39,12 @@ jobs:
         run: npm run build
         working-directory: site
 
+      - name: Add CNAME
+        run: echo "mind.value888.site" > site/dist/CNAME
+
+      - name: Add .nojekyll
+        run: touch site/dist/.nojekyll
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

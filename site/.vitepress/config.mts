@@ -7,8 +7,8 @@ export default defineConfig({
   title: 'Personal Knowledge Base',
   description: 'A personal website for knowledge management',
 
-  // Base path for GitHub Pages deployment
-  base: '/mind-river/',
+  // Base path for GitHub Pages deployment with custom domain
+  base: '/',
 
   // Output directory
   outDir: 'dist',
