@@ -7,6 +7,9 @@ export default defineConfig({
   title: 'Personal Knowledge Base',
   description: 'A personal website for knowledge management',
 
+  // Base path for GitHub Pages deployment
+  base: '/mind-river/',
+
   // Output directory
   outDir: 'dist',
   cacheDir: '.vitepress/cache',
@@ -31,8 +34,11 @@ export default defineConfig({
 
   // Head configuration
   head: [
-    ['meta', { name: 'theme-color', content: '#3eaf7c' }],
+    ['meta', { name: 'theme-color', content: '#10b981' }],
     ['meta', { name: 'og:type', content: 'website' }],
+    ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
+    ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
+    ['link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap' }],
   ],
 
   // Build configuration
