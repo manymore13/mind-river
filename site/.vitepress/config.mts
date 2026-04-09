@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 import nav from './nav'
 import sidebar from './sidebar'
+import syncRawPlugin from '../scripts/sync-raw-plugin.mjs'
 
 export default defineConfig({
   title: 'Personal Knowledge Base',
@@ -15,7 +16,7 @@ export default defineConfig({
     nav,
     sidebar,
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/' }
+      { icon: 'github', link: 'https://github.com/manymore13/' }
     ],
     footer: {
       message: 'Built with VitePress',
@@ -40,4 +41,9 @@ export default defineConfig({
 
   // Ignore dead links for now
   ignoreDeadLinks: true,
+
+  // Vite plugins
+  vite: {
+    plugins: [syncRawPlugin()],
+  },
 })

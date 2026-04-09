@@ -1,16 +1,5 @@
 /* Custom styles */
 
-/* Ad slot styles */
-.ad-slot {
-  padding: 1rem;
-  margin: 1rem 0;
-  border-radius: 8px;
-  background: var(--vp-c-bg-soft);
-  text-align: center;
-  color: var(--vp-c-text-2);
-  font-size: 0.875rem;
-}
-
 /* Link to related styles */
 .link-to-related {
   padding: 1rem;
