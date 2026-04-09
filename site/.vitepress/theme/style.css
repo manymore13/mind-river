@@ -1,0 +1,53 @@
+/* Custom styles */
+
+/* Ad slot styles */
+.ad-slot {
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+  background: var(--vp-c-bg-soft);
+  text-align: center;
+  color: var(--vp-c-text-2);
+  font-size: 0.875rem;
+}
+
+/* Link to related styles */
+.link-to-related {
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+  background: var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-divider);
+}
+
+.link-to-related a {
+  color: var(--vp-c-brand-1);
+  font-weight: 500;
+}
+
+/* Giscus container styles */
+.giscus-container {
+  margin-top: 2rem;
+}
+
+/* Custom container styles */
+.custom-block {
+  margin: 1rem 0;
+  padding: 1rem 1.25rem;
+  border-radius: 8px;
+}
+
+.custom-block.tip {
+  background: var(--vp-c-tip-soft);
+  border-left: 4px solid var(--vp-c-tip-1);
+}
+
+.custom-block.warning {
+  background: var(--vp-c-warning-soft);
+  border-left: 4px solid var(--vp-c-warning-1);
+}
+
+.custom-block.danger {
+  background: var(--vp-c-danger-soft);
+  border-left: 4px solid var(--vp-c-danger-1);
+}
