@@ -29,6 +29,13 @@ export default {
         { text: '笔记方法', link: '/wiki/concepts/note-taking' },
         { text: '卡片盒笔记法', link: '/wiki/concepts/zettelkasten' },
       ]
+    },
+    {
+      text: '笔记',
+      collapsed: true,
+      items: [
+        { text: '猎豹移动全球化扩张与认知管理', link: '/wiki/notes/cheetah-mobile-global-strategy' },
+      ]
     }
   ],
   '/blog/': [
