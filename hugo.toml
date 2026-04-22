@@ -1,24 +1,101 @@
+# ==========================================
+# 1. 基础全局配置
+# ==========================================
 baseURL = "https://mind.value888.site/"
 languageCode = "zh-cn"
 title = "长河落日圆"
 theme = "stack"
 
-# 关键：让 Hugo 使用根目录下的 post/ 作为内容目录
-contentDir = "posts"
-# 开启 CJK（中日韩）语言支持，必填
+# 删除 contentDir 行（使用默认值 content 目录）
+
+# 核心功能开关
 hasCJKLanguage = true
-
-# 建议设置摘要长度（字符数）
 summaryLength = 140
+enableEmoji = true
+favicon = "img/favicon.png"
 
+# 分类法支持
+[taxonomies]
+    category = "categories"
+    tag = "tags"
+    series = "series"
+
+# ==========================================
+# 2. Params 主题深度定制
+# ==========================================
 [params]
-mainSections = ["notes"]
-ShowReadingTime = true
-ShowShareButtons = false
-ShowPostNavLinks = true
 
-[menu]
+    mainSections = ["notes", "prompt"]
+    featuredImageField = "image"
+
+    # 界面显示控制
+    ShowReadingTime = true
+    ShowShareButtons = false
+    ShowPostNavLinks = true
+
+    # 搜索功能
+    [params.search]
+        enabled = true
+
+    # 页脚信息
+    [params.footer]
+        since = 2026
+        customText = ""
+
+    # 左侧边栏 (Sidebar) — 修正后
+    [params.sidebar]
+
+        subtitle = "知行合一，长河落日圆"
+        avatar = "img/favicon.png"
+
+    # 文章详情页设置
+    [params.article]
+        math = true
+        toc = true
+        readingTime = true
+        license.enabled = true
+    [params.widgets]
+        page = [
+            { type = "toc" }  # 必须包含 toc 类型
+        ]
+
+# ==========================================
+# 3. 主导航菜单 (Main Menu)
+# ==========================================
 [[menu.main]]
-name = "归档"
-url = "/archives/"
-weight = 5
+    name = "首页"
+    url = "/"
+    weight = 1
+    [menu.main.params]
+        icon = "home"
+
+[[menu.main]]
+    name = "归档"
+    url = "/archives/"
+    weight = 2
+    [menu.main.params]
+        icon = "archives"
+
+[[menu.main]]
+    name = "分类"
+    url = "/categories/"
+    weight = 3
+    [menu.main.params]
+        icon = "categories"
+
+[[menu.main]]
+    name = "标签"
+    url = "/tags/"
+    weight = 4
+    [menu.main.params]
+        icon = "tag"
+
+# ==========================================
+# 4. 社交链接 (Social Links) — 修正多余的符号
+# ==========================================
+[[menu.main]]
+    name = "github"
+    url = "https://github.com/manymore13"
+    weight = 5
+    [menu.main.params]
+        icon = "brand-github"
