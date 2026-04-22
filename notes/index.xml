@@ -124,18 +124,18 @@
  &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h3 id="42-完整流程示意"&gt;4.2 完整流程示意
-&lt;/h3&gt;&lt;pre tabindex="0"&gt;&lt;code&gt;用户触发提问
- ↓
-AI 展示问题卡片（一次一个问题）
- ↓
-用户选择/输入
- ↓
-下一个问题（或展示摘要）
- ↓
-用户确认
- ↓
-AI 基于答案执行任务
-&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;/h3&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;用户触发提问
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; ↓
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;AI 展示问题卡片（一次一个问题）
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; ↓
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;用户选择/输入
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; ↓
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;下一个问题（或展示摘要）
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; ↓
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;用户确认
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; ↓
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;AI 基于答案执行任务
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
 &lt;h2 id="五对话特性"&gt;五、对话特性
 &lt;/h2&gt;&lt;h3 id="51-上下文保留"&gt;5.1 上下文保留
 &lt;/h3&gt;&lt;p&gt;工具保留完整的对话历史，支持：&lt;/p&gt;
@@ -146,18 +146,18 @@ AI 基于答案执行任务
 &lt;/ul&gt;
 &lt;h3 id="52-渐进式澄清"&gt;5.2 渐进式澄清
 &lt;/h3&gt;&lt;p&gt;问题按照逻辑顺序逐步展示，避免一次性呈现大量选项造成的信息过载：&lt;/p&gt;
-&lt;pre tabindex="0"&gt;&lt;code&gt;第一步：了解目标
- [您想要实现什么功能？]
- ↓
-第二步：了解约束
- [有什么技术限制吗？]
- ↓
-第三步：了解偏好
- [有什么个人偏好？]
- ↓
-第四步：确认理解
- [让我总结一下您的需求...]
-&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;第一步：了解目标
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; [您想要实现什么功能？]
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; ↓
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;第二步：了解约束
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; [有什么技术限制吗？]
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; ↓
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;第三步：了解偏好
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; [有什么个人偏好？]
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; ↓
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;第四步：确认理解
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; [让我总结一下您的需求...]
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
 &lt;h2 id="六设计理念"&gt;六、设计理念
 &lt;/h2&gt;&lt;h3 id="61-减少-ai-幻觉"&gt;6.1 减少 AI 幻觉
 &lt;/h3&gt;&lt;p&gt;通过提问确认关键信息，可以：&lt;/p&gt;
